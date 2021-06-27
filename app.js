@@ -17,8 +17,8 @@ app.get("/", (req, res) => {
   res.render("index");
 })
 
-app.get("/demo-question", (req, res) => {
-  res.render("second", {
+app.get("/questions", (req, res) => {
+  res.render("questions", {
     selectedSmile: req.query.v,
     feedbackData: functions.createRandamizedFeedbacks()
   });
