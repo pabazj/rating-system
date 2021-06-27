@@ -100,9 +100,9 @@
             </div>
           </div>
           <div class="question-mood-value__right">
-            <div class="question-mood-value__company-name"><bdo dir="auto">Demo Inc.</bdo></div>
+            <div class="question-mood-value__company-name"><bdo dir="auto">Demo Pabz.</bdo></div>
           </div>
-          <!-- <input class="send-button" type="submit" value="back"> -->
+        
         </div>
       </form>
 
@@ -125,8 +125,7 @@
 
               <button type="button" class="question-form-poll__group__add-comment is-hidden js-addComment"
                 data-target=<%="#toggle_" +i%> data-toggle="collapse">Add comment</button>
-              <input id=<%="toggle_" +i%> name=<%="comment_"+i%> class="collapse question-textarea" placeholder=
-                <%=feedbackData[i].feedbackPlaceholder%> >
+              <input id=<%="toggle_" +i%> name=<%="comment_"+i%> class="collapse question-textarea">
                   </input>
           </div>
           <% } %>
@@ -145,7 +144,7 @@
             <div class="submitDiv">
               <input id="sendButton" class="send-button" type="submit" value="Send">
             </div>
-            <!-- <button id="btn_data" name="send" value="submit" type="submit">Send</button> -->
+          
       </form>
     </div>
 
@@ -167,42 +166,6 @@
       </div>
     </div>
   </div>
-  <!-- <script>
-   $(document).ready(function(){
-    $('.sendButton').attr('disabled',true);
-    $('#ratinginput').keyup(function(){
-        if($(this).val().length !=0)
-            $('.sendButton').attr('disabled', false);            
-        else
-            $('.sendButton').attr('disabled',true);
-    })
-});
-  </script> -->
-  <!-- <script type="text/javascript">
-    function stoppedTyping(){
-        if(this.value.length > 0) { 
-          
-            document.getElementById('ratinginput').disabled = false; 
-        } else { 
-            document.getElementById('ratinginput').disabled = true;
-        }
-    }
-    function verify(){
-    }
-</script> -->
-<script>
-  //var form = document.getElementById("form-id");
-  document.getElementById("sendButton").addEventListener("onkeypress", function () {
-  //form.submit();
-  alert('test');
-});
-</script>
-
-<script>
- $('input.rating_0').on('input',function(e){
- alert('Changed!')
-});
-  </script>
 </body>
 
 </html>
